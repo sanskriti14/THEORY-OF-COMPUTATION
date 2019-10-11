@@ -2,7 +2,7 @@
 """
 Created on Sat Oct 12 00:09:57 2019
 
-@author: admin
+@author: Sanskriti
 """
 
 def incr(bit_string):

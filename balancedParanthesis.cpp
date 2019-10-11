@@ -1,7 +1,7 @@
 #include<bits/stdc++.h> 
 using namespace std; 
 
-bool areParanthesisBalanced(string expr) 
+bool paranthesisBalanced(string expr) 
 { 
     stack<char> s; 
     char x; 
@@ -20,7 +20,6 @@ bool areParanthesisBalanced(string expr)
         switch (expr[i]) 
         { 
         case ')': 
-  
             x = s.top(); 
             s.pop(); 
             if (x=='{' || x=='[') 
@@ -28,7 +27,6 @@ bool areParanthesisBalanced(string expr)
             break; 
   
         case '}': 
-  
             x = s.top(); 
             s.pop(); 
             if (x=='(' || x=='[') 
@@ -36,15 +34,13 @@ bool areParanthesisBalanced(string expr)
             break; 
   
         case ']': 
-  
-             x = s.top(); 
+            x = s.top(); 
             s.pop(); 
             if (x =='(' || x == '{') 
                 return false; 
             break; 
         } 
     } 
-  
     return (s.empty()); 
 } 
   
@@ -52,7 +48,7 @@ int main()
 { 
     string expr ;
     cin>>expr;
-    if (areParanthesisBalanced(expr)) 
+    if (paranthesisBalanced(expr)) 
         cout << "Balanced"; 
     else
         cout << "Not Balanced"; 

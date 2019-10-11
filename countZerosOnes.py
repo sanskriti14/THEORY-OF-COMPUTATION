@@ -2,7 +2,7 @@
 """
 Created on Fri Oct 11 20:34:52 2019
 
-@author: admin
+@author: Sanskriti
 """
 
 t=int(input("Enter no. of Test Cases : "))

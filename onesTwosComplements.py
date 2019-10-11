@@ -2,7 +2,7 @@
 """
 Created on Fri Oct 11 20:40:34 2019
 
-@author: admin
+@author: Sanskriti
 """
 
 def flip(c):
